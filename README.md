@@ -44,9 +44,9 @@ berikut ini adalah lingkungan yang kami gunakan dalam pengembangan aplikasi.
 ### Use Case Diagram
 ![Use Case Diagram](https://drive.google.com/uc?export=view&id=1apampnApVafHh_kEJbYueaKSleyV2Q5H)
 ### Activity Diagram
-![Activity Diagram](https://drive.google.com/file/d/1OXCZ0JrZpTB-CgozRHefrkpCZ_NbuG5q/view?usp=sharing)
+![Activity Diagram](https://drive.google.com/uc?export=view&id=1sXn1a_TMl-1aZ8LcAkA2sUf2ASsCAqVY)
 ### Class Diagram
-![Class Diagram](https://asset.kompas.com/crops/SU2rIFfQk9bmpllTs4f-kQDaRsU=/192x128:1728x1152/750x500/data/photo/2021/02/04/601bce0638cf2.jpg)
+![Class Diagram](https://drive.google.com/uc?export=view&id=1Fwr2Zy8uffmb9O6aWQx6_y856nLTWX6P)
 ### Entity Relationship Diagram
 
 ### Arsitektur System
