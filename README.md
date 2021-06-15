@@ -1,6 +1,9 @@
-# IPB Ta'aruf
-Tugas akhir PSBO - Praktikum 2 - Kelompok 4
+<p align="center">
+<img src="https://drive.google.com/uc?export=view&id=1IMyp2DOtzXiVMNFnq0jv7d6x0cW7Cu-R" width="200" height="200" />
 
+<h1 align="center">IPB Ta'aruf</h1>
+<h3 align="center">Laporan Tugas Akhir PSBO</h3>
+<h4 align="center">Praktikum 2 - Kelompok 4</h4>
 
 
 ## Description
@@ -17,6 +20,15 @@ Tugas akhir PSBO - Praktikum 2 - Kelompok 4
 **Licin sebagai seorang muslim:** “Saya ingin mencari pasangan dengan cara yang baik yang dianjurkan oleh agama saya”  
 
 **muslimah sebagai salah satu user dari aplikasi:** “menerima atau menolak permintaan ta’aruf serta dapat memberikan konfirmasi persetujuan”  
+<br>
+**Pelamar:**
+<p><img src="https://drive.google.com/uc?export=view&id=1iGch8NeaE1pKMl9-CzDE-m-GfGpK4s2b" width="800"/>  
+ 
+**Calon:**
+<p><img src="https://drive.google.com/uc?export=view&id=1YAcLBopGhScg8pFeAIw07e9QDXxA62dR" width="800"/>  
+ 
+**Admin:**
+<p><img src="https://drive.google.com/uc?export=view&id=1j1-pGrN9IpHdD6g3uuQBW6sUCbOFNG9R" width="800"/>  
 
 ## Developer Environment Specifications
 berikut ini adalah lingkungan yang kami gunakan dalam pengembangan aplikasi. 
@@ -38,17 +50,24 @@ berikut ini adalah lingkungan yang kami gunakan dalam pengembangan aplikasi.
  - Prisma
 
 ## OOP Concepts
+1. Pengkapsulan  
+Pengkapsulan/_Encapsulation_ adalah konsep tentang pengikatan data atau menyatukan metode yang berbeda atau “dikapsulkan” menjadi satu unit data. Berbagai objek yang berada dalam _class_ tersebut dapat berdiri sendiri tanpa terpengaruh oleh objek yang lainnya. Didalam pengkapsulan terdapat hak akses seperti public, private, dan protected.  
+2. Abstraksi  
+Abstraksi/_Abstraction_ berarti memungkinkam seorang  _developer_  memerintahkan suatu fungsi, tanpa harus mengetahui bagaimana fungsi tersebut bekerja. Lebih lanjut,  _abstraction_ berarti menyembunyikan detail latar belakang dan hanya mewakili informasi yang diperlukan untuk dunia luar.
+3. Penurunan sifat  
+Penurunan sifat/_Inheritance_ merupakan konsep OOP yang digunakan untuk membentuk _class_ baru yang memiliki fungsi turunan atau mirip dengan fungsi yang ada sebelumnya.
+
 ## Development Design
 
 ## Project Result
 ### Use Case Diagram
-![Use Case Diagram](https://drive.google.com/file/d/1sXn1a_TMl-1aZ8LcAkA2sUf2ASsCAqVY/view?usp=sharing)
+![Use Case Diagram](https://drive.google.com/uc?export=view&id=1sXn1a_TMl-1aZ8LcAkA2sUf2ASsCAqVY)
 ### Activity Diagram
-![Activity Diagram](https://drive.google.com/file/d/1OXCZ0JrZpTB-CgozRHefrkpCZ_NbuG5q/view?usp=sharing)
+![Activity Diagram](https://drive.google.com/uc?export=view&id=1OXCZ0JrZpTB-CgozRHefrkpCZ_NbuG5q)
 ### Class Diagram
-![Class Diagram](https://asset.kompas.com/crops/SU2rIFfQk9bmpllTs4f-kQDaRsU=/192x128:1728x1152/750x500/data/photo/2021/02/04/601bce0638cf2.jpg)
+![Class Diagram](https://drive.google.com/uc?export=view&id=1Fwr2Zy8uffmb9O6aWQx6_y856nLTWX6P)
 ### Entity Relationship Diagram
-
+![Entity Relationship Diagram](https://drive.google.com/file/d/1FFZw6EkzTIUTIXLBFJzpFi5xw0WadQZ7/view?usp=sharing)
 ### Arsitektur System
 
 ### Main Function
