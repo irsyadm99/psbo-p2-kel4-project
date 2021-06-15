@@ -20,6 +20,12 @@
 **Licin sebagai seorang muslim:** “Saya ingin mencari pasangan dengan cara yang baik yang dianjurkan oleh agama saya”  
 
 **muslimah sebagai salah satu user dari aplikasi:** “menerima atau menolak permintaan ta’aruf serta dapat memberikan konfirmasi persetujuan”  
+<p align="center">
+<img src="https://drive.google.com/uc?export=view&id=1iGch8NeaE1pKMl9-CzDE-m-GfGpK4s2b" width="800"/>
+<p align="center">
+<img src="https://drive.google.com/uc?export=view&id=1YAcLBopGhScg8pFeAIw07e9QDXxA62dR" width="800"/>
+<p align="center">
+<img src="https://drive.google.com/uc?export=view&id=1j1-pGrN9IpHdD6g3uuQBW6sUCbOFNG9R" width="800"/>
 
 ## Developer Environment Specifications
 berikut ini adalah lingkungan yang kami gunakan dalam pengembangan aplikasi. 
