@@ -1,6 +1,9 @@
-# IPB Ta'aruf
-Tugas akhir PSBO - Praktikum 2 - Kelompok 4
+<p align="center">
+<img src="https://drive.google.com/uc?export=view&id=1IMyp2DOtzXiVMNFnq0jv7d6x0cW7Cu-R" width="200" height="200" />
 
+<h1 align="center">IPB Ta'aruf</h1>
+<h3 align="center">Laporan Tugas Akhir PSBO</h3>
+<h4 align="center">Praktikum 2 - Kelompok 4</h4>
 
 
 ## Description
@@ -38,6 +41,13 @@ berikut ini adalah lingkungan yang kami gunakan dalam pengembangan aplikasi.
  - Prisma
 
 ## OOP Concepts
+1. Pengkapsulan  
+Pengkapsulan/_Encapsulation_ adalah konsep tentang pengikatan data atau menyatukan metode yang berbeda atau “dikapsulkan” menjadi satu unit data. Berbagai objek yang berada dalam _class_ tersebut dapat berdiri sendiri tanpa terpengaruh oleh objek yang lainnya. Didalam pengkapsulan terdapat hak akses seperti public, private, dan protected.  
+2. Abstraksi  
+Abstraksi/_Abstraction_ berarti memungkinkam seorang  _developer_  memerintahkan suatu fungsi, tanpa harus mengetahui bagaimana fungsi tersebut bekerja. Lebih lanjut,  _abstraction_ berarti menyembunyikan detail latar belakang dan hanya mewakili informasi yang diperlukan untuk dunia luar.
+3. Penurunan sifat  
+Penurunan sifat/_Inheritance_ merupakan konsep OOP yang digunakan untuk membentuk _class_ baru yang memiliki fungsi turunan atau mirip dengan fungsi yang ada sebelumnya.
+
 ## Development Design
 
 ## Project Result
