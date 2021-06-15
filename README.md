@@ -67,7 +67,7 @@ Penurunan sifat/_Inheritance_ merupakan konsep OOP yang digunakan untuk membentu
 ### Class Diagram
 ![Class Diagram](https://drive.google.com/uc?export=view&id=1Fwr2Zy8uffmb9O6aWQx6_y856nLTWX6P)
 ### Entity Relationship Diagram
-
+![Entity Relationship Diagram](https://drive.google.com/file/d/1FFZw6EkzTIUTIXLBFJzpFi5xw0WadQZ7/view?usp=sharing)
 ### Arsitektur System
 
 ### Main Function
