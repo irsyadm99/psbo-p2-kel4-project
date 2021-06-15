@@ -17,6 +17,7 @@ import { fade, makeStyles } from "@material-ui/core/styles";
 import useUser from "../hooks/useUser";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -89,9 +90,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Navbar() {
+export default function Navbar({ dataContent, ...props }) {
   const { currentUser, setCurrentUser } = useUser();
   const [anchorEl, setAnchorEl] = useState(null);
+  // const { id } = dataContent;
   const router = useRouter();
   const classes = useStyles();
 
@@ -112,9 +114,13 @@ export default function Navbar() {
     router.push("/editprofil");
   };
 
+  // const handleProfile = () => {
+  //   router.push(`/profile/${id}`);
+  // };
+
   return (
     <>
-      <AppBar position="static" className={classes.appbar}>
+      <AppBar position="static" className={classes.appbar} {...props}>
         <Toolbar className={classes.toolbar}>
           <IconButton className={classes.iconbutton} href="/">
             <img src="/logos.svg" width={157} height={36} />
@@ -183,3 +189,7 @@ export default function Navbar() {
     </>
   );
 }
+
+Navbar.propTypes = {
+  dataContent: PropTypes.object,
+};

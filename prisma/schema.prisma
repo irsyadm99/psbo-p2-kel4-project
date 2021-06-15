@@ -17,6 +17,15 @@ model User {
   lastName  String
   email     String
   password  String
+  deskripsiDiri      String
+  pekerjaan          String
+  suku               String
+  pendidikanTerakhir String
+  domisili           String
+  statusPernikahan   String
+  hobi               String
+  karakterPositif    String
+  karakterNegatif    String
   // reference
   profile   Profile?
 }

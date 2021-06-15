@@ -14,6 +14,7 @@ import {
   CardActionArea,
 } from "@material-ui/core";
 import PropTypes from "prop-types";
+import Link from "next/link";
 // import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 // import FiberManualRecordRoundedIcon from "@material-ui/icons/FiberManualRecordRounded";
 // import MenuBookIcon from "@material-ui/icons/MenuBook";
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Kartu({ dataContent, ...props }) {
-  const { firstName, lastName, email } = dataContent;
+  const { firstName, lastName, email, id } = dataContent;
   const classes = useStyles();
   return (
     <>
@@ -65,7 +66,9 @@ export default function Kartu({ dataContent, ...props }) {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Detail
+            <Link href={`/profile/${id}`} passHref>
+              <Typography variant="subtitle2">Detail</Typography>
+            </Link>
           </Button>
         </CardActions>
       </Card>
