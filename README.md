@@ -42,7 +42,7 @@ berikut ini adalah lingkungan yang kami gunakan dalam pengembangan aplikasi.
 
 ## Project Result
 ### Use Case Diagram
-![Use Case Diagram](https://drive.google.com/file/d/1sXn1a_TMl-1aZ8LcAkA2sUf2ASsCAqVY/view?usp=sharing)
+![Use Case Diagram](https://drive.google.com/uc?export=view&id=1apampnApVafHh_kEJbYueaKSleyV2Q5H)
 ### Activity Diagram
 ![Activity Diagram](https://drive.google.com/file/d/1OXCZ0JrZpTB-CgozRHefrkpCZ_NbuG5q/view?usp=sharing)
 ### Class Diagram
