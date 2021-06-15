@@ -11,6 +11,8 @@ import {
 } from "@material-ui/core";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import useUser from "../hooks/useUser";
+import { useRouter } from "next/router";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -33,10 +35,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function EditProfileForm() {
   const classes = useStyles();
+  const { currentUser } = useUser();
+  const router = useRouter();
 
   const validationSchema = yup.object({
     deskripsi: yup.string(),
-    job: yup.string(),
+    pekerjaan: yup.string(),
     domisili: yup.string(),
     suku: yup.string(),
     status: yup.string(),
@@ -47,14 +51,51 @@ export default function EditProfileForm() {
     visimisi: yup.string(),
   });
 
-  const handleEdit = () => {
-    return console.log("edited");
+  const handleEdit = async ({
+    deskripsi,
+    pekerjaan,
+    domisili,
+    suku,
+    status,
+    pendidikanTerakhir,
+    hobi,
+    karakterPositif,
+    karakterNegatif,
+  }) => {
+    const data = localStorage.getItem("currentUser");
+    const response = await fetch("/api/editProfile", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        deskripsi: deskripsi,
+        pekerjaan: pekerjaan,
+        domisili: domisili,
+        suku: suku,
+        status: status,
+        pendidikanTerakhir: pendidikanTerakhir,
+        hobi: hobi,
+        karakterPositif: karakterPositif,
+        karakterNegatif: karakterNegatif,
+        userId: parseInt(data[7]),
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+        localStorage.setItem("currentUser", JSON.stringify(data.result));
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+    router.push("/");
   };
 
   const formik = useFormik({
     initialValues: {
       deskripsi: "",
-      job: "",
+      pekerjaan: "",
       domisili: "",
       suku: "",
       status: "",
@@ -95,13 +136,13 @@ export default function EditProfileForm() {
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="job"
-                    name="job"
+                    name="pekerjaan"
                     variant="outlined"
                     fullWidth
                     id="pekerjaan"
                     label="Pekerjaan"
                     autoFocus
-                    value={formik.values.job}
+                    value={formik.values.pekerjaan}
                     onChange={formik.handleChange}
                   />
                 </Grid>
@@ -150,7 +191,7 @@ export default function EditProfileForm() {
                     name="pendidikanTerakhir"
                     variant="outlined"
                     fullWidth
-                    id="pendidikan-terakhir"
+                    id="pendidikanTerakhir"
                     label="Pendidikan Terakhir"
                     autoFocus
                     value={formik.values.pendidikanTerakhir}
@@ -176,7 +217,7 @@ export default function EditProfileForm() {
                     name="karakterPositif"
                     variant="outlined"
                     fullWidth
-                    id="karakter-positif"
+                    id="karakterPositif"
                     label="Karakter Positif"
                     autoFocus
                     value={formik.values.karakterPositif}
@@ -189,7 +230,7 @@ export default function EditProfileForm() {
                     name="karakterNegatif"
                     variant="outlined"
                     fullWidth
-                    id="karakter-negatif"
+                    id="karakterNegatif"
                     label="Karakter Negatif"
                     autoFocus
                     value={formik.values.karakterNegatif}
@@ -202,7 +243,7 @@ export default function EditProfileForm() {
                     name="visimisi"
                     variant="outlined"
                     fullWidth
-                    id="visi-misi"
+                    id="visimisi"
                     label="Visi dan Misi Pernikahan"
                     autoFocus
                     value={formik.values.visimisi}
@@ -218,6 +259,7 @@ export default function EditProfileForm() {
                     color="primary"
                     size="medium"
                     className={classes.submit}
+                    href="/"
                   >
                     Cancel
                   </Button>

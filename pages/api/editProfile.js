@@ -7,7 +7,7 @@ export default async function editProfileHandler(req, res) {
     // Process a POST request
     try {
       const {
-        deskripsiDiri,
+        deskripsi,
         pekerjaan,
         suku,
         pendidikanTerakhir,
@@ -24,7 +24,7 @@ export default async function editProfileHandler(req, res) {
           id: userId,
         },
         data: {
-          deskripsiDiri: deskripsiDiri,
+          deskripsiDiri: deskripsi,
           pekerjaan: pekerjaan,
           suku: suku,
           pendidikanTerakhir: pendidikanTerakhir,

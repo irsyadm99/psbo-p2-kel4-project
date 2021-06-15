@@ -85,7 +85,7 @@ const Header = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("currentUser");
-    router.push("/");
+    router.reload();
   };
 
   const handleEdit = () => {
