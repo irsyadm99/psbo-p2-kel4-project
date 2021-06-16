@@ -57,7 +57,7 @@ const prisma = new PrismaClient();
 
 
 export default async function editProfileHandler(req, res) {
-  if (req.method === "POST") {
+  if (req.method === "PUT") {
     // Process a POST request
     try {
       const {
