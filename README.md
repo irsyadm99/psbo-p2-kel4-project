@@ -71,15 +71,17 @@ Penurunan sifat/_Inheritance_ merupakan konsep OOP yang digunakan untuk membentu
 ![Class Diagram](https://drive.google.com/uc?export=view&id=1Fwr2Zy8uffmb9O6aWQx6_y856nLTWX6P)
 ### Entity Relationship Diagram
 ![Entity Relationship Diagram](https://drive.google.com/uc?export=view&id=1ubtrFk6MDX5f11p9X4L0BK8-4y0QTsv1)
-### Arsitektur System
-
+### Architecture System
+![Architecture System](https://drive.google.com/uc?export=view&id=13B-_xblYYAoRcxkFPJGOqIBCrT_im9wH)
 ### Main Function
- 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fungsi utama yang kami kembangkan adalah ketika user mengajukan proposal kepada user lain untuk dilakukannya proses taaruf. Pada proses ini sistem akan mengirimkan notifikasi kepada user yang diajukan proposal dan user pengirim proposal akan menunggu kelanjutan apakah proposalnya diterima sehingga dapat dilakukan ke tahap selanjutnya atau tidak. Jika diterima, maka salah satu mentor akan membuat sebuah grup chat yang bersifat temporary dan menemani pembicaraan mereka.
+
 ### CRUD Function
+
 
  ## Implementation Result
  ## Suggestions for further development
- ## Developer
+ ## Project Developer
  
  Nama | Nim | Jobdesk
  --- | --- | ---
