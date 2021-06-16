@@ -1,5 +1,6 @@
 
 
+
 <p align="center">
 <img src="https://drive.google.com/uc?export=view&id=1IMyp2DOtzXiVMNFnq0jv7d6x0cW7Cu-R" width="200" height="200" />
 
@@ -62,28 +63,46 @@ Penurunan sifat/_Inheritance_ merupakan konsep OOP yang digunakan untuk membentu
 
 ## Development Design
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada projek ini kami menggunakan pendekatan agile dimana metodologi pengembangan _software_ ini didasarkan pada proses pengerjaan yang dilakukan berulang atau berkelanjutan. Metode ini berfokus kepada klien dan berusaha selalu melibatkan klien dalam proses pengembangan tiap tahapan _software_. Sebagai developer kami bisa menghapus dan menambahkan fitur yang sesuai dengan keinginan klien di tengah-tengah proses pembuatan _software_.
+
 ## Project Result
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sebelum memasuki tahap pembuatan _software_, terlebih dahulu kami membuat illustrasi kerja _sofrware_ terlebih dahulu. Dengan adanya illustrasi seperti use case diagram, activity diagram dll, proses pembuatan _software_ menjadi lebih mudah. Illustrasi ini juga dapat membuat antar anggota tim dapat mengerti cara kerja _software_ dengan baik sehingga meminimalkan adanya miskomunikasi. Berikut adalah beberapa illustrasi penggambaran sistem kami bekerja:
+
 ### Use Case Diagram
 ![Use Case Diagram](https://drive.google.com/uc?export=view&id=1sXn1a_TMl-1aZ8LcAkA2sUf2ASsCAqVY)
 ### Activity Diagram
 ![Activity Diagram](https://drive.google.com/uc?export=view&id=1OXCZ0JrZpTB-CgozRHefrkpCZ_NbuG5q)
 ### Class Diagram
-![Class Diagram](https://drive.google.com/uc?export=view&id=1pz1ZiUmxgiSXPrs6ttU4RJitGf79kKKB)
+![Class Diagram](https://drive.google.com/uc?export=view&id=1Fwr2Zy8uffmb9O6aWQx6_y856nLTWX6P)
 ### Entity Relationship Diagram
 ![Entity Relationship Diagram](https://drive.google.com/uc?export=view&id=1ubtrFk6MDX5f11p9X4L0BK8-4y0QTsv1)
 ### Architecture System
 ![Architecture System](https://drive.google.com/uc?export=view&id=13B-_xblYYAoRcxkFPJGOqIBCrT_im9wH)
 ### Main Function
+![Main Function](https://drive.google.com/uc?export=view&id=19yHwjORx2UHcWHUmgBWtTPsqLze0XEHZ)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fungsi utama yang kami kembangkan adalah ketika user mengajukan proposal kepada user lain untuk dilakukannya proses taaruf. Pada proses ini sistem akan mengirimkan notifikasi kepada user yang diajukan proposal dan user pengirim proposal akan menunggu kelanjutan apakah proposalnya diterima sehingga dapat dilakukan ke tahap selanjutnya atau tidak. Jika diterima, maka salah satu mentor akan membuat sebuah grup chat yang bersifat temporary dan menemani pembicaraan mereka.
 
 ### CRUD Function
 
+ - Create
+Seorang membuat akun baru yang nantinya akan melakukan registrasi dan terdaftar sebagai user pada aplikasi ini. Ini termasuk kedalam fugsi _create_.
+ - Read
+User dapat melakukan pencarian pasangan untuk dikirimkan proposal. Pada proses ini, user dapat melihat profile setiap user dan mencari sesuai dengan kriteria yang diinginkannya. Pada proses ini termasuk kedalam fungsi _read_.
+ - Update
+User dapat mengupdate profilenya sendiri. Saat pertama kali membuat akun, user akan langsung melakukan pengisian data diri, disamping itu juga user juga dapat mengubah profilnya kapanpun dia ingin menggantinya. Bagian ini termasuk kedalam fungsi _update_
+ - Delete
+Seseorang dapat menghapus akunnya setelah selesai menggunakan aplikasi kami. Bagian ini termasuk kedalam fungsi _delete_
 
- ## Implementation Result
+## Implementation Result
+
+
  ## Suggestions for further development
+-  Memperbaiki security sistem
+-  upgrade keseluruhan web menjadi responsif
+- Melengkapi fungsi2 untk diterapkan
+- Menerapkan pagination untuk find partner
+- searching partner
+
  ## Project Developer
- 
  Nama | Nim | Jobdesk
  --- | --- | ---
  Irsyad Musyaffa| G64180048 | Fullstack developer
