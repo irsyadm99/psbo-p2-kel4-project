@@ -37,9 +37,18 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     marginBottom: "10px",
+    borderRadius: "22px",
   },
   media: {
     height: 140,
+  },
+  ava: {
+    width: 91,
+    height: 91,
+    margin: theme.spacing(3, 1, 2),
+  },
+  btn: {
+    backgroundColor: "#F80658",
   },
 }));
 
@@ -49,28 +58,40 @@ export default function Kartu({ dataContent, ...props }) {
   return (
     <>
       <Card className={classes.root} {...props}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="https://source.unsplash.com/random"
-            title="Random Image"
+        <Box display="flex">
+          <Avatar
+            src="https://source.unsplash.com/random"
+            className={classes.ava}
           />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {firstName}
+          <Box display="flex" flexDirection="column" marginTop="30px">
+            <Typography variant="body2" gutterBottom>
+              {firstName} {lastName}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              my last name is {lastName} contact me at {email}
+            <Typography variant="body2" gutterBottom>
+              You can contact me at {email}
             </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            <Link href={`/profile/${id}`} passHref>
-              <Typography variant="subtitle2">Detail</Typography>
-            </Link>
-          </Button>
-        </CardActions>
+            <Grid container justify="flex-end">
+              <Grid item>
+                <CardActions>
+                  <Button
+                    size="small"
+                    variant="contained"
+                    className={classes.btn}
+                  >
+                    <Link href={`/profile/${id}`} passHref>
+                      <Typography
+                        variant="subtitle2"
+                        style={{ color: "#ffff" }}
+                      >
+                        Detail
+                      </Typography>
+                    </Link>
+                  </Button>
+                </CardActions>
+              </Grid>
+            </Grid>
+          </Box>
+        </Box>
       </Card>
     </>
   );

@@ -56,7 +56,7 @@ export default function findpartner({ datas }) {
           </Box>
           <Box marginTop="10px">
             <Typography variant="subtitle1" paragraph={true}>
-              temukan partner yang match denganmu dan ajukan CV.
+              temukan partner yang match denganmu dan ajukan proposal.
             </Typography>
           </Box>
           <Grid container spacing={4} className={classes.gridContainer}>

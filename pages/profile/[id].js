@@ -8,17 +8,18 @@ import {
   Container,
   CssBaseline,
   Paper,
-  MakeStyles,
+  Button,
+  makeStyles,
 } from "@material-ui/core";
 import PropTypes from "prop-types";
 
 const prisma = new PrismaClient();
 
-// const useStyles = MakeStyles((theme) => ({
-//   paper: {
-//     marginTop: "10px",
-//   },
-// }));
+const useStyles = makeStyles((theme) => ({
+  btn: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
 
 export async function getStaticPaths() {
   const datas = await prisma.user.findMany();
@@ -47,23 +48,36 @@ export async function getStaticProps({ params }) {
 
 export default function Profile({ datas }) {
   const { firstName, lastName, email } = datas[0];
-  //   const classes = useStyles();
+  const classes = useStyles();
   return (
     <>
       <Navbar />
-      <Box>
+      <Box marginTop="20px">
         <Container maxWidth="lg">
           <CssBaseline />
           <Paper elevation={3}>
-            <Typography variant="h6" spacing={3}>
-              First Name : {firstName}
-            </Typography>
-            <Typography variant="h6" spacing={3}>
-              Last Name : {lastName}
-            </Typography>
-            <Typography variant="h6" spacing={3}>
-              Email : {email}
-            </Typography>
+            <Box spacing={5} marginLeft="20px">
+              <Typography variant="h6" spacing={5}>
+                Nama : {firstName} {lastName}
+              </Typography>
+              <Typography variant="h6" spacing={5}>
+                Email : {email}
+              </Typography>
+            </Box>
+            <Box display="flex" spacing={5} marginLeft="20px">
+              <Grid container spacing={5}>
+                <Grid item xs={12} sm={6}>
+                  <Button
+                    size="medium"
+                    variant="contained"
+                    color="primary"
+                    className={classes.btn}
+                  >
+                    Apply For Taaruf
+                  </Button>
+                </Grid>
+              </Grid>
+            </Box>
           </Paper>
         </Container>
       </Box>
