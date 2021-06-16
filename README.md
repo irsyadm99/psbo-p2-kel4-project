@@ -113,7 +113,7 @@ Tampilan
  --- | --- | ---
  Irsyad Musyaffa| G64180048 | Fullstack developer
  Muhammad Khoiru Tobi Albertino | G64180065 | Backend developer
- Rafi Solichin | G64180068 | Backend developer
+ Rafi Solichin | G64180068 | Project Leader
  Melani Hidayati | G64180028 | UI Designer
 
  -------
