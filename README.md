@@ -50,6 +50,7 @@ berikut ini adalah lingkungan yang kami gunakan dalam pengembangan aplikasi.
 ### Tech Stack
  - Next js
  - Prisma
+ - SQLite
 
 ## OOP Concepts
 1. Pengkapsulan  
