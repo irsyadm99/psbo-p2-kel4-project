@@ -93,7 +93,13 @@ User dapat mengupdate profilenya sendiri. Saat pertama kali membuat akun, user a
 Seseorang dapat menghapus akunnya setelah selesai menggunakan aplikasi kami. Bagian ini termasuk kedalam fungsi _delete_
 
 ## Implementation Result
-
+Tampilan
+![Tampilan 1](https://drive.google.com/uc?export=view&id=1I1Cuc2K3D9cR6CfIUIYgBurrMvrWJ88Y)
+![Tampilan 2](https://drive.google.com/uc?export=view&id=1D99npWyrhSqr7E-s0GsYEKPf3crCzYwi)
+![Tampilan 3](https://drive.google.com/uc?export=view&id=1R68-L_ESC88lbezTqSR9wD1g4ktOiDiM)
+![Tampilan 1](https://drive.google.com/uc?export=view&id=1knK7Jz385pYRcHVNUk--bxMBQIxZzZiy)
+![Tampilan 1](https://drive.google.com/uc?export=view&id=1ghm1FSLQBLhdl8EipQMuz5ki53w04217)
+![Tampilan 1](https://drive.google.com/uc?export=view&id=11T_ShGTAmI4YMTQvY68Hw-sIkhP-Gh_8)
 
  ## Suggestions for further development
 -  Memperbaiki security sistem
