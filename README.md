@@ -1,3 +1,5 @@
+
+
 <p align="center">
 <img src="https://drive.google.com/uc?export=view&id=1IMyp2DOtzXiVMNFnq0jv7d6x0cW7Cu-R" width="200" height="200" />
 
@@ -38,16 +40,17 @@ berikut ini adalah lingkungan yang kami gunakan dalam pengembangan aplikasi.
  - Visual Studio Code
  - Postman
  - Figma
+ - Github
+ - Trello
 
 ### Hardware
  - Processor: Intel(R) Core(TM) i5- 6200U @ 2.30GHz (4 CPUs), ~2.4GHz
  - Memory: 8Gb RAM
 
 ### Tech Stack
- - Stackoverflow
- - Youtube
  - Next js
  - Prisma
+ - SQLite
 
 ## OOP Concepts
 1. Pengkapsulan  
@@ -58,20 +61,39 @@ Abstraksi/_Abstraction_ berarti memungkinkam seorang  _developer_  memerintahkan
 Penurunan sifat/_Inheritance_ merupakan konsep OOP yang digunakan untuk membentuk _class_ baru yang memiliki fungsi turunan atau mirip dengan fungsi yang ada sebelumnya.
 
 ## Development Design
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada projek ini kami menggunakan pendekatan agile dimana metodologi pengembangan _software_ ini didasarkan pada proses pengerjaan yang dilakukan berulang atau berkelanjutan. Metode ini berfokus kepada klien dan berusaha selalu melibatkan klien dalam proses pengembangan tiap tahapan _software_. Sebagai developer kami bisa menghapus dan menambahkan fitur yang sesuai dengan keinginan klien di tengah-tengah proses pembuatan _software_.
 ## Project Result
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sebelum memasuki tahap pembuatan _software_, terlebih dahulu kami membuat illustrasi kerja _sofrware_ terlebih dahulu. Dengan adanya illustrasi seperti use case diagram, activity diagram dll, proses pembuatan _software_ menjadi lebih mudah. Illustrasi ini juga dapat membuat antar anggota tim dapat mengerti cara kerja _software_ dengan baik sehingga meminimalkan adanya miskomunikasi. Berikut adalah beberapa illustrasi penggambaran sistem kami bekerja:
 ### Use Case Diagram
 ![Use Case Diagram](https://drive.google.com/uc?export=view&id=1sXn1a_TMl-1aZ8LcAkA2sUf2ASsCAqVY)
 ### Activity Diagram
 ![Activity Diagram](https://drive.google.com/uc?export=view&id=1OXCZ0JrZpTB-CgozRHefrkpCZ_NbuG5q)
 ### Class Diagram
-![Class Diagram](https://drive.google.com/uc?export=view&id=1Fwr2Zy8uffmb9O6aWQx6_y856nLTWX6P)
+![Class Diagram](https://drive.google.com/uc?export=view&id=1pz1ZiUmxgiSXPrs6ttU4RJitGf79kKKB)
 ### Entity Relationship Diagram
-![Entity Relationship Diagram](https://drive.google.com/file/d/1ubtrFk6MDX5f11p9X4L0BK8-4y0QTsv1/view?usp=sharing)
-### Arsitektur System
-
+![Entity Relationship Diagram](https://drive.google.com/uc?export=view&id=1ubtrFk6MDX5f11p9X4L0BK8-4y0QTsv1)
+### Architecture System
+![Architecture System](https://drive.google.com/uc?export=view&id=13B-_xblYYAoRcxkFPJGOqIBCrT_im9wH)
 ### Main Function
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fungsi utama yang kami kembangkan adalah ketika user mengajukan proposal kepada user lain untuk dilakukannya proses taaruf. Pada proses ini sistem akan mengirimkan notifikasi kepada user yang diajukan proposal dan user pengirim proposal akan menunggu kelanjutan apakah proposalnya diterima sehingga dapat dilakukan ke tahap selanjutnya atau tidak. Jika diterima, maka salah satu mentor akan membuat sebuah grup chat yang bersifat temporary dan menemani pembicaraan mereka.
+
 ### CRUD Function
+
+
+ ## Implementation Result
+ ## Suggestions for further development
+ ## Project Developer
+ 
+ Nama | Nim | Jobdesk
+ --- | --- | ---
+ Irsyad Musyaffa| G64180048 | Fullstack developer
+ Muhammad Khoiru Tobi Albertino | G64180065 | Backend developer
+ Rafi Solichin | G64180068 | Backend developer
+ Melani Hidayati | G64180028 | UI Designer
+
+ -------
+<h1 align="center">How to Install and Use</h1>
+<br>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
