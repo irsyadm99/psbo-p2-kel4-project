@@ -1,4 +1,5 @@
 
+
 <p align="center">
 <img src="https://drive.google.com/uc?export=view&id=1IMyp2DOtzXiVMNFnq0jv7d6x0cW7Cu-R" width="200" height="200" />
 
@@ -76,7 +77,17 @@ Penurunan sifat/_Inheritance_ merupakan konsep OOP yang digunakan untuk membentu
  
 ### CRUD Function
 
+ ## Implementation Result
+ ## Suggestions for further development
+ ## Developer
  
+ Nama | Nim | Jobdesk
+ --- | --- | ---
+ Irsyad Musyaffa| G64180048 | Fullstack developer
+ Muhammad Khoiru Tobi Albertino | G64180065 | Backend developer
+ Rafi Solichin | G64180068 | Backend developer
+ Melani Hidayati | G64180028 | UI Designer
+
  -------
 <h1 align="center">How to Install and Use</h1>
 <br>
