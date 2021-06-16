@@ -4,16 +4,7 @@ CREATE TABLE "User" (
     "firstName" TEXT NOT NULL,
     "lastName" TEXT NOT NULL,
     "email" TEXT NOT NULL,
-    "password" TEXT NOT NULL,
-    "deskripsiDiri" TEXT NOT NULL,
-    "pekerjaan" TEXT NOT NULL,
-    "suku" TEXT NOT NULL,
-    "pendidikanTerakhir" TEXT NOT NULL,
-    "domisili" TEXT NOT NULL,
-    "statusPernikahan" TEXT NOT NULL,
-    "hobi" TEXT NOT NULL,
-    "karakterPositif" TEXT NOT NULL,
-    "karakterNegatif" TEXT NOT NULL
+    "password" TEXT NOT NULL
 );
 
 -- CreateTable
