@@ -12,6 +12,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import PropTypes from "prop-types";
+import { Alert } from "@material-ui/lab";
 
 const prisma = new PrismaClient();
 
@@ -49,6 +50,13 @@ export async function getStaticProps({ params }) {
 export default function Profile({ datas }) {
   const { firstName, lastName, email } = datas[0];
   const classes = useStyles();
+  const handleClick = () => {
+    return (
+      <>
+        <Alert severity="success">Success!</Alert>
+      </>
+    );
+  };
   return (
     <>
       <Navbar />
@@ -72,6 +80,7 @@ export default function Profile({ datas }) {
                     variant="contained"
                     color="primary"
                     className={classes.btn}
+                    onClick={handleClick}
                   >
                     Apply For Taaruf
                   </Button>
