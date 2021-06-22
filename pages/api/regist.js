@@ -1,23 +1,24 @@
 import { PrismaClient, Prisma } from "@prisma/client";
+import bcrypt from "bcrypt";
 
 const prisma = new PrismaClient();
 
 export default async function registHandler(req, res) {
+  const { password } = req.body;
+  const salt = await bcrypt.genSalt();
+  const encryptedPassword = await bcrypt.hash(password, salt);
+
   if (req.method === "POST") {
     // Process a POST request
     try {
-      const { 
-        firstName, 
-        lastName, 
-        email, 
-        password } = req.body;
+      const { firstName, lastName, email } = req.body;
 
       const result = await prisma.user.create({
         data: {
           firstName: firstName,
           lastName: lastName,
           email: email,
-          password: password,
+          password: encryptedPassword,
           // deskripsiDiri: "",
           // pekerjaan: "",
           // suku: "",

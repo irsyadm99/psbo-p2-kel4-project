@@ -1,4 +1,5 @@
 import { PrismaClient, Prisma } from "@prisma/client";
+import bcrypt from "bcrypt";
 
 const prisma = new PrismaClient();
 
@@ -14,8 +15,11 @@ export default async function registHandler(req, res) {
       if (result.length === 0) {
         throw new Error("Ëmail tidak ditemukan");
       }
-      // res.json(result);
-      if (result[0].password !== password) {
+      const isUserPasswordValid = await bcrypt.compare(
+        password,
+        result[0].password
+      );
+      if (!isUserPasswordValid) {
         throw new Error("Password salah!");
       }
       res.status(200).json({
